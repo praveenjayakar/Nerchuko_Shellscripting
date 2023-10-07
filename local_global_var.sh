@@ -1,19 +1,12 @@
 #!/bin/bash 
 
-var1="i am global variable"
+AA="Global Var"
 
-var2="i am also global var2"
+echo $AA
 
-var_chk () {
-	var1="i am from function"
-	var2="i am also from function"
-	echo $var1
-	echo $var2
+var_chk() {
+	local AA="function var"
+	echo $AA
 }
+
 var_chk
-
-h=2
-g=6
-
-
-echo $var1
